@@ -3,8 +3,19 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>IG Reels Clone</h1>
+    <div className="app">
+
+      <div className="app__top">
+      <img 
+      className='app__logo'
+      src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-instagram-ini-ada-varias-dan-transparan-33.png"
+      alt=""
+      />
+      <h1> Reels</h1>
+      </div>
+      <div className="app__videos">
+      
+      </div>
     </div>
   );
 }
