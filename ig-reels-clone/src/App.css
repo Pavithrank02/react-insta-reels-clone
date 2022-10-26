@@ -1,4 +1,6 @@
 html {
+    overflow: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 .app {
@@ -29,11 +31,10 @@ html {
     scroll-snap-type: y mandatory;
 
 }
-
-.app_video::-webkit-scrollbar {
-    display: none;
+.app__videos ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
+
 .app__videos {
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
