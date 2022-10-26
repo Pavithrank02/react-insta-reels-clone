@@ -1,6 +1,4 @@
 html {
-    overflow: scroll;
-    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 .app {
@@ -27,14 +25,16 @@ html {
     border-radius: 20px;
     max-width: 450px;
     max-height: 1200px;
-    overflow:scroll;
+    overflow-y:hidden;
     scroll-snap-type: y mandatory;
 
 }
-.app__videos ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+.app__videos::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 .app__videos {
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
