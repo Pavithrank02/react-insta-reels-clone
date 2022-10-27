@@ -1,8 +1,9 @@
 import React, { useRef, useState } from 'react'
 import './VideoCard.css';
 import VideoHeader from './VideoHeader';
+import VideoFooter from './VideoFooter';
 
-function VideoCard() {
+function VideoCard({url, likes, shares, channel, avatarSrc, song}) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videoRef = useRef(null); 
   const onVideoPress = () => {
@@ -22,9 +23,16 @@ function VideoCard() {
         ref={videoRef}
         onClick={onVideoPress}
         className='videoCard__player'
-        src='https://player.vimeo.com/external/420237319.sd.mp4?s=c25da38b732e29a30ed7f974b2d0199f5f7e072e&profile_id=165&oauth2_token_id=57447761'
+        src={url}
         alt='IG reels video'
         loop
+        />
+        <VideoFooter 
+        channel={channel}
+        avatarSrc={avatarSrc}
+        song={song}
+        likes={likes}
+        shares={shares}
         />
     </div>
   )
