@@ -1,40 +1,47 @@
-html {
-    scroll-snap-type: y mandatory;
-}
-.app {
+
+html{
+    scroll-snap-type: mandatory;
+  }
+  
+  .app__top{
+    margin-bottom: 50px;
+  }
+  
+  .app{
     display: grid;
     place-items: center;
     height: 100vh;
-    background-color: black;
-}
-.app__top {
-    margin-bottom: -150px;
-}
-.app__top > h1 {
+    background-color : black;
+    margin : 0px;
+    padding :0px;
+  }
+  
+  .app__logo > h1 {
     text-align: center;
     color: white;
-}
-.app__logo {
+  }
+  
+  .app__logo{
     height: 12vh;
-}
-.app__videos {
+  }
+  
+  .app__videos {
     position: relative;
-    height: 65vh;
-    background-color: white;
+    height: 70vh;
+    background-color: #fff;
     width: 70%;
-    border-radius: 20px;
-    max-width: 450px;
+    border-radius : 20px;
+    max-width: 350px;
     max-height: 1200px;
-    overflow-y:hidden;
-    scroll-snap-type: y mandatory;
-
-}
-.app__videos::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
-.app__videos {
-    overflow-y: scroll;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+  }
+  
+  .app__videos::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .app__videos {
+    -ms-overflow-style: none;
     scrollbar-width: none;
-}
+  }
