@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 import VideoCard from "./VideoCard";
 function App() {
+  const [reels, setreels] = useState();
   return (
     <div className="app">
       <div className="app__top">
@@ -15,7 +17,7 @@ function App() {
         <VideoCard
           channel={"pavi"}
           avatarSrc={"https://avatars0.githubusercontent.com/u/59897156?v=4"}
-          song="song"
+          song="Test song -- maanguyile poonguyile"
           url={
             "https://player.vimeo.com/external/420237319.sd.mp4?s=c25da38b732e29a30ed7f974b2d0199f5f7e072e&profile_id=165&oauth2_token_id=57447761"
           }

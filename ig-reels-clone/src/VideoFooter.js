@@ -6,6 +6,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import SendIcon from "@mui/icons-material/Send";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import CommentIcon from "@mui/icons-material/Comment";
+import Marquee from "react-fast-marquee";
 
 function VideoFooter({ likes, shares, channel, avatarSrc, song }) {
   return (
@@ -18,14 +19,15 @@ function VideoFooter({ likes, shares, channel, avatarSrc, song }) {
       </div>
       <div className="videoFooter__ticker">
         <MusicNoteIcon className="videoFooter__icon" />
-        <h1> {song}</h1>
+        <Marquee className="videoFooter__text2" speed={50} gradient={false}> {song} </Marquee>
       </div>
       <div className="videoFooter__actions">
         <div className="videoFooter__actionsLeft">
           <FavoriteIcon />
+          <CommentIcon />
           <SendIcon />
           <MoreHorizIcon />
-          <CommentIcon />
+          
         </div>
         <div className="videoFooter__actionsRight">
           <div className="videoFooter__stat">

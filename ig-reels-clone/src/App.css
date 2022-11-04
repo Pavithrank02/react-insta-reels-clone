@@ -4,21 +4,23 @@ html{
   }
   
   .app__top{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    color: white;
   }
   
   .app{
     display: grid;
-    place-items: center;
+    place-items:center ;
     height: 100vh;
     background-color : black;
     margin : 0px;
-    padding :0px;
+    padding: 0px;
   }
   
   .app__logo > h1 {
     text-align: center;
     color: white;
+
   }
   
   .app__logo{
